@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".DetailPackage">
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/appToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appToolbar"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mcDetailName"
+                android:text="MC Name"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:gravity="center">
+            </TextView>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:id="@+id/mcDetailImg">
+            </ImageView>
+            <TextView
+                android:id="@+id/mcAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="Age: ">
+            </TextView>
+            <TextView
+                android:id="@+id/mcGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Gender: ">
+            </TextView>
+            <TextView
+                android:id="@+id/mcPersonality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Personality: ">
+            </TextView>
+            <TextView
+                android:id="@+id/mcDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Introduction: \n">
+            </TextView>
+            <TextView
+                android:id="@+id/mcDetailPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:text="Price: ">
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/signupColor"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mcFinish"
+            android:layout_marginTop="8.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Choose this MC"
+            android:background="@drawable/btn_design">
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mcRemove"
+            android:layout_marginTop="8.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Remove this MC"
+            android:visibility="gone"
+            android:background="@drawable/btn_design">
+        </androidx.appcompat.widget.AppCompatButton>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>

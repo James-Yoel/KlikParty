@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".DetailEquipment">
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/appToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appToolbar"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eqDetailName"
+                android:text="Eq Name"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center">
+            </TextView>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:id="@+id/eqDetailImg">
+            </ImageView>
+            <TextView
+                android:id="@+id/eqSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="Size: ">
+            </TextView>
+            <TextView
+                android:id="@+id/eqColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Color: ">
+            </TextView>
+            <TextView
+                android:id="@+id/eqDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Description: \n">
+            </TextView>
+            <TextView
+                android:id="@+id/eqAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Maximum amount: ">
+            </TextView>
+            <TextView
+                android:id="@+id/eqDetailPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Price: ">
+            </TextView>
+            <TextView
+                android:id="@+id/eqOrAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="Numbers to be booked: ">
+            </TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_design"
+                android:ems="4"
+                android:inputType="number"
+                android:id="@+id/etAmount">
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/signupColor"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/eqFinish"
+            android:layout_marginTop="8.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Choose this Equipment"
+            android:background="@drawable/btn_design">
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/eqRemove"
+            android:layout_marginTop="8.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Remove this Equipment"
+            android:visibility="gone"
+            android:background="@drawable/btn_design">
+        </androidx.appcompat.widget.AppCompatButton>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>

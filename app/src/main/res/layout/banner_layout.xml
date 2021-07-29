@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <umn.ac.id.uas_mobileandroid_2021_a3.BannerSlider
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:clipToPadding="false"
+        android:id="@+id/sliderView"
+        android:focusableInTouchMode="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+    </umn.ac.id.uas_mobileandroid_2021_a3.BannerSlider>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal"
+            android:id="@+id/pagesContainer">
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

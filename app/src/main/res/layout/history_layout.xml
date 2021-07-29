@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_viewHistory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/bookType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Order ID: "
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/orderMade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Made: "
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/bookDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Date: "
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/bookTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Start Time: "
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/bookLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Location: "
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/bookPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Price: "
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

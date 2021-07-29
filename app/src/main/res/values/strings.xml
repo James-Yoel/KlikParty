@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">KlikParty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ex_note">Fill in this notes to give direction / things to add either for the party, MC, and the equipment.
+    If you pick Custom Party Package, please fill in the blank to give direction over what you want to do for the party.
+    Do note that based on what was in the notes, there might be extra fees for the payment.</string>
+    <string-array name="partyScale">
+        <item>Choose Party Scale:</item>
+        <item>Big ($500.00)</item>
+        <item>Medium ($300.00)</item>
+        <item>Private ($200.00)</item>
+    </string-array>
+    <string-array name="partyPackage">
+        <item>Choose Party Package:</item>
+        <item>Birthday Party A</item>
+        <item>Birthday Party B</item>
+        <item>Wedding Party A</item>
+        <item>Wedding Party B</item>
+        <item>Celebration Party A</item>
+        <item>Celebration Party B</item>
+        <item>Custom Party</item>
+    </string-array>
+    <string-array name="bookingHour">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

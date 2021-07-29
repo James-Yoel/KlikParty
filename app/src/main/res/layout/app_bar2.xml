@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/black"
+    android:id="@+id/appToolbar2"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:civ_border_color="@color/signupColor"
+        app:civ_border_width="1dp"
+        android:id="@+id/userImg" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/balance"
+            android:textColor="@color/white"
+            android:text=""/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

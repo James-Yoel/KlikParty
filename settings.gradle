@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Uas_MobileAndroid_2021_A3"
